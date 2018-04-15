@@ -75,7 +75,7 @@ ciprebuilds: &ciprebuilds
         osx_image: xcode9.2
         env: COMPILER="apple-clang" COMPILER_VERSION="9.0" COMPILER_CONFIGURATION="Release" TARGET="macos" DOCKER="NODOCKER" NIGHTLY="conan"
       - <<: *osx
-        osx_image xcode9.2
+        osx_image: xcode9.2
         env: COMPILER="apple-clang" COMPILER_VERSION="9.0" COMPILER_CONFIGURATION="Debug" TARGET="macos" DOCKER="NODOCKER" NIGHTLY="conan"
       - <<: *linux
         env: COMPILER="gcc" COMPILER_VERSION="8" COMPILER_CONFIGURATION="Release" TARGET="compile" DOCKER="ubuntu-bionic-gcc08" NIGHTLY="conan"
