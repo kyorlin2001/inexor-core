@@ -112,9 +112,9 @@ ciprebuilds: &ciprebuilds
       - <<: *linux
         env: COMPILER="clang" COMPILER_VERSION="3.9" COMPILER_CONFIGURATION="Debug" TARGET="compile" DOCKER="ubuntu-bionic-clang039" NIGHTLY="conan"
     fast_finish: true # don't wait for allow_failures to fail, gives faster response
-    allow_failures:osx
+    allow_failures:
       - os: osx
-      - os: linux
+      #CI - os: linux
 
 
 
